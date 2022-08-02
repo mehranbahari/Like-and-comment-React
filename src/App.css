@@ -1,38 +1,88 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
   text-align: center;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 0 2px 2px 5px rgba(29, 28, 28, 0.164);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width: 100%;
+  display: block;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul,
+li {
+  list-style: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.post {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-self: flex-start;
+}
+.post li {
+  border: 1px solid #000;
+  margin: 10px;
+  padding: 10px;
+  width: 30%;
+}
+.posts img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;
+}
+.posts h1 {
+  font-size: 24px;
+  padding: 10px 0;
+}
+.posts p {
+  padding: 10px;
+}
+i {
+  cursor: pointer;
+}
+.red {
+  color: red;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.single-post {
+  width: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.single-post li {
+  width: 100%;
+}
+.comments-wrapper {
+  width: 50%;
+}
+.comment {
+  border-bottom: 1px solid red;
+  padding: 10px 0;
+}
+.comments-form form {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  padding: 20px;
+}
+.comments-form form * {
+  height: 40px;
+  margin: 5px 0;
+  padding: 5px;
 }
